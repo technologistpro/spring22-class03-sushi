@@ -1,0 +1,43 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:300,400,700");
+
+body {
+    margin: 12px;
+    color: #333;
+    font-family: Lato, Verdana, Arial, sans-serif;
+  }
+  
+  header {
+    font-family: "Lobster", cursive;
+    font-weight: normal;
+  }
+
+  header h1,
+  header h2 {
+      font-size: 4rem;
+      margin: 8px 0;
+  }
+  
+  header h2 {
+    font-size: 2rem;
+  }
+
+  .nav {
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 4px;
+    display: block;
+    background-color: #600;
+  }
+  .nav a:hover {
+    color: #222;
+    background-color: #f0dfb4;
+  }
