@@ -144,3 +144,8 @@ aside + p::first-line {
   }
 
 }
+
+.foo {
+  font-size: 200px;
+  color: rebeccapurple;
+}
