@@ -40,6 +40,7 @@ header h2 {
 
 header h2 {
   font-size: 2rem;
+  color: rgb(206, 78, 78);
 }
 
 .nav {
@@ -55,16 +56,21 @@ header h2 {
   margin-right: 10px;
 }
 .nav a {
-  color: #fff;
+  color: rgb(250, 244, 244);
   text-decoration: none;
+  text-align: center;
   padding: 4px;
   display: block;
-  background-color: #600;
+  background-color: rgb(206, 78, 78);
+  border-radius: 8px;
+  border-color: black;
   transition: background-color 0.5s cubic-bezier(0.85, -0.01, 0.26, 0.99);
+  position: relative;
+  box-shadow: 0px 0px 6px 2px #aaa;
 }
 .nav a:hover {
-  color: #222;
-  background-color: #f0dfb4;
+  color: rgb(206, 78, 78);
+  background-color: #f8f7f5;
 }
 
 aside {
@@ -72,15 +78,32 @@ aside {
   top: 200px;
   left: 24px;
   width: 180px;
-  background-color: #f0dfb4;
+  background-color: rgb(206, 78, 78);
   padding: 6px;
+  border-radius: 8px;
   border: 1px solid #600;
+  color: rgb(250, 244, 244);
+  box-shadow: 0px 0px 6px 2px #aaa;
+  /* text-align: center; */
+}
+
+aside ul {
+  list-style: none;
+  padding: 2px;
+  border-top: 1px dashed #f8f7f5;
+}
+aside ul li:first-child {
+  font-family: "Lobster", cursive;
+  text-align: center;
 }
 
 article {
   margin: 0 20px 0 240px;
 }
 
+article h2 {
+  font-family: "Lobster", cursive;
+}
 article img {
   float: right;
 }
@@ -101,8 +124,14 @@ blockquote::before {
   color: #600;
 }
 
-aside + p::first-line {
-  font-weight: bold;
+aside + p::first-letter {
+  float: left;
+  font-family: lobster;
+  font-size: 50px;
+  padding-right: 5px;
+  padding-top: 12px;
+  line-height: 30px;
+  color: rgb(206, 78, 78);
 }
 
 @media print {
@@ -142,6 +171,11 @@ aside + p::first-line {
     margin-right: 20px;
     width: 100%;
   }
+
+  aside ul li:first-child {
+    font-family: "Lobster", cursive;
+    text-align: unset;
+  }
 }
 
 .foo {
@@ -176,6 +210,11 @@ aside + p::first-line {
   right: -14px;
   color: #600;
   cursor: pointer;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 0.25rem;
+  line-height: 1rem;
+  text-align: center;
 
   /* text-decoration: none;
   background-color: #fff;

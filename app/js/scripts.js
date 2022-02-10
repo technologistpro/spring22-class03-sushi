@@ -4,10 +4,11 @@ function show(e) {
   console.log(e.target);
   if (e.target.matches(".map") || e.target.matches(".closer")) {
     document.querySelector("body").classList.toggle("showme");
+    e.preventDefault();
   } else {
     document.querySelector("body").classList.remove("showme");
   }
-  e.preventDefault();
+  // e.preventDefault();
 }
 
 // EXAMINING AND CHANGING THE DOCUMENT  //
