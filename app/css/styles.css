@@ -60,12 +60,12 @@ header h2 {
   padding: 4px;
   display: block;
   background-color: #600;
-  transition: background-color 0.5s cubic-bezier(0.85,-0.01, 0.26, 0.99);
+  transition: background-color 0.5s cubic-bezier(0.85, -0.01, 0.26, 0.99);
 }
 .nav a:hover {
   color: #222;
   background-color: #f0dfb4;
-} 
+}
 
 aside {
   position: absolute;
@@ -93,7 +93,7 @@ blockquote {
 
 blockquote::before {
   content: "“";
- font-size: 4rem;
+  font-size: 4rem;
   font-family: serif;
   color: #333;
   line-height: 0.1em;
@@ -142,10 +142,48 @@ aside + p::first-line {
     margin-right: 20px;
     width: 100%;
   }
-
 }
 
 .foo {
   font-size: 200px;
   color: rebeccapurple;
+}
+
+.popover {
+  width: 300px;
+  height: 225px;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #600;
+  border-radius: 4px;
+  position: fixed;
+  top: calc(50% - 112px);
+  left: calc(50% - 150px);
+  display: none;
+}
+
+.showme .popover {
+  display: block;
+}
+
+.showme #wrapper {
+  filter: blur(4px) grayscale(100%) opacity(50%);
+}
+
+.popover .closer {
+  position: absolute;
+  top: -14px;
+  right: -14px;
+  color: #600;
+  cursor: pointer;
+
+  /* text-decoration: none;
+  background-color: #fff;
+  padding: 0.25rem;
+  border: 2px solid #600;
+  border-radius: 50%;
+  width: 1rem;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center; */
 }
